@@ -131,6 +131,7 @@ body {
   font-family: var(--bodyFont);
   color: var(--paraColor);
   line-height: 30px;
+  overflow-x: hidden;
 }
 
 p, span {
@@ -1185,7 +1186,7 @@ select {
 }
 
 .br-2 {
-  background-image: url(../img/breadcrumb/br-2.webp);
+  background-image: url(../img/breadcrumb/b-2.png);
 }
 
 .br-3 {
@@ -5166,7 +5167,7 @@ article {
 .contact-card {
   padding: 40px 20px 35px;
   border-radius: 5px;
-  background-color: var(--titleColor);
+  background-color: #026ab6;
   margin-bottom: 25px;
   transition: var(--transition);
   position: relative;
@@ -5187,12 +5188,12 @@ article {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-color: #192242;
+  background-color: #f1f8ff;
   transition: var(--transition);
   margin: 0 auto;
 }
 .contact-card .contact-icon i {
-  color: var(--whiteColor);
+  color: #000a2d;
   font-size: 26px;
   line-height: 0.7;
   display: block;
@@ -5217,11 +5218,11 @@ article {
   display: block;
 }
 .contact-card:hover {
-  background-color: var(--primaryColor);
+  /* background-color: var(--primaryColor); */
   transform: translateY(-5px);
 }
 .contact-card:hover .contact-icon {
-  background-color: #5B85FF;
+  background-color: #ffffff;
 }
 
 #cmt-form,
@@ -5638,12 +5639,13 @@ a.btn-two.order_btn {
 ;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 .circle {
   position: absolute;
   border-radius: 50%;
-  background-color: white;
+  background-color: #ffffff52;
 }
 .circle-1 {
   width: 450px;
@@ -5719,3 +5721,95 @@ a.btn-two.order_btn {
     transform: translateY(-8px);
   }
 }
+
+    /* Category Widget Styling */
+    .widget-categories {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .widget-categories h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #396cf0;
+      padding-bottom: 10px;
+    }
+    .widget-categories ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .widget-categories ul li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 12px;
+    }
+    .widget-categories ul li::before {
+      content: "\ea6c";
+      font-family: "remixicon";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #396cf0;
+    }
+    .widget-categories ul li a {
+      text-decoration: none;
+      color: #222;
+      display: block;
+      transition: 0.3s;
+    }
+    .widget-categories ul li a span {
+      float: right;
+      color: #888;
+    }
+    .widget-categories ul li a:hover {
+      color: #396cf0;
+    }
+
+    /* Product Card */
+    .shop-box-layout1 {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .shop-box-layout1:hover {
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+    }
+    .shop-box-layout1 .item-img img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .shop-box-layout1 .item-content {
+      padding: 15px;
+    }
+    .shop-box-layout1 .item-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .shop-box-layout1 .item-price {
+      color: #396cf0;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+    .rate-items i {
+      color: #f7c948;
+      font-size: 16px;
+    }
+
+
+    @media(max-width:600px){
+       a.navbar-brand{
+        width: 200px;
+       }
+       .patient-recovered.position-absolute.bg-white.rounded-pill.shadow-sm.d-flex.align-items-center.p-2.px-3{
+        display: none !important;
+       }
+    }
