@@ -5813,3 +5813,11 @@ a.btn-two.order_btn {
         display: none !important;
        }
     }
+
+    button.btn.btn-outline-primary.btn-two {
+    height: 40px;
+    display: flex
+;
+    align-items: center;
+    padding: 15px 25px;
+}

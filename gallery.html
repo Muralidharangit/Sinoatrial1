@@ -44,13 +44,13 @@
 
 .gallery-item.show {
     opacity: 1;
-    transform: scale(1);
-    visibility: visible; /* Make visible for show */
+ 
     height: auto; /* Allow height to expand */
     margin-bottom: 24px; /* Example margin, adjust as needed */
     padding-bottom: 12px; /* Example padding, adjust as needed */
     /* Transition for height can be added here if needed, but often looks jumpy */
     /* transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, height 0.5s ease-in-out; */
+      
 }
 
 /* Optional: Styling for active button */
@@ -348,21 +348,20 @@ Chennai-600056.</p>
 
         <div class="container">
     <!-- Filter Buttons -->
-    <div class="filter-buttons py-3">
-        <button class="btn btn-outline-primary active" data-filter="all">All</button>
-        <button class="btn btn-outline-primary" data-filter="ct-surgical">Surgical</button>
-        <button class="btn btn-outline-primary" data-filter="ct-lab">Lab</button>
-        <button class="btn btn-outline-primary" data-filter="ct-diagnostic">Diagnostic</button>
+    <div class="filter-buttons py-3 d-flex gap-2 justify-content-center my-3">
+        <button class="btn btn-outline-primary active btn-two " data-filter="all">All</button>
+        <button class="btn btn-outline-primary btn-two" data-filter="ct-surgical">Surgical</button>
+        <button class="btn btn-outline-primary btn-two" data-filter="ct-lab">Lab</button>
+        <button class="btn btn-outline-primary btn-two" data-filter="ct-diagnostic">Diagnostic</button>
     </div>
 
     <!-- Gallery Grid -->
     <div class="row">
         <div class="col-lg-4 col-md-6 gallery-item ct-surgical show">
-            <div class="service-card style-three">
-                <span class="service-img">
-                    <img src="https://www.zintilon.com/wp-content/uploads/2024/01/Rows-of-advanced-CNC-machines-in-a-modern-machine-shop.png" alt="Image" >
-                </span>
-            </div>
+           
+               
+                    <img src="https://www.zintilon.com/wp-content/uploads/2024/01/Rows-of-advanced-CNC-machines-in-a-modern-machine-shop.png" alt="Image" class="w-100">
+              
         </div>
 
         <div class="col-lg-4 col-md-6 gallery-item ct-lab show">
